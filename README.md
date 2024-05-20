@@ -8,7 +8,7 @@ After some minutes the same started happening in other branches near the main HQ
 
 The challenge was proposing a recovery plan and figuring out how they propagated through the system and compromised it, in an effort to give the best and most plausible solution my team and I got into the shoes of the threat actors and designed a malware to attack a windows xp system, there was no information about what system they were using but they challenge specified it was at least 20 years old and to this day windows xp is widely used around the world.
 
-
+![windows xp](./images/windows_xp.png)
 
 In the recon phase of the development we found 3 potential entry vectors, a misconfiguration of .inf files entering a system, a rubber ducky posing as a mass storage device and adobe acrobat executing JavaScript code embedded in pdf files.
 
@@ -19,7 +19,7 @@ These 3 entry vectors had one goal, to execute a malicious batch file that would
 When a .inf file is in the root directory of a usb, it can run files instantly when placed inside a windows xp machine.
 This vector proved somehow successful in early versions of windows XP, especially before windows xp SP2. The reason this wasn't our entry vector is that most configurations of windows xp for large systems have a registry that prompts a user input when a .inf is detected in the root directory of a usb system.
 
-
+![windows xp regitry gui](./images/registry_edit.png)
 ## Second entry vector Javascript code inside PDF - semi successful 
 
 Most of the versions of Adobe Acrobat Reader that were built for Windows XP by default run JavaScript code embedded inside of any pdf file. 
