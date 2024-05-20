@@ -26,7 +26,7 @@ Most of the versions of Adobe Acrobat Reader that were built for Windows XP by d
 Our first approach to this entry vector was successful, we managed to display an alert on the machine symply by opening the file on Adobe Acrobat and Windows Explorer.
 ![image showing pdf altert saying hola denzle](./images/JS_POC.jpeg)
 This seemed like the best way to enter the system, but then when designing and testing a different payload that used the JS ActiveXObject constructor to call cmd commands, we got an error detailing that ActiveXObject was not declared in the system. 
-![image showing error ActiveObjectX not defined](!./images/active_objectx_not.jpeg)
+![image showing error ActiveObjectX not defined](./images/active_objectx_not.jpeg)
 With short time we tried using a different version of windows xp but the error kept happening, it wasn't solved even after letting adobe acrobat have every unsafe permission. 
 With little time left we needed to change approaches.
 
@@ -36,7 +36,7 @@ To this day this is one of the most efficient entry vectors, the only downside i
 
 We used a HAK5 rubber ducky and payload studio pro to develop the simple chain of keystrokes that would run in the background as the pdf file was opened. 
 
-
+![payload studio](./images/payload_studio.png)
 This simple keystroke injection opened the doors to our payload. 
 
 
@@ -177,6 +177,8 @@ endlocal
 
 
 With all this info we can use the msfconsole to exploit the [CVE-2019-0708](https://nvd.nist.gov/vuln/detail/cve-2019-0708)
+
+![msf console on parrot vm](./images/bluekeep_msfconsole.png)
 
 This vulnerability allows remote code execution and makes it extremely easy to propagate through the whole system.
 
