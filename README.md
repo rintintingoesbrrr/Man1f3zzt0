@@ -1,8 +1,18 @@
 # Man1f3zzt0
 
-## Made by Ellioth Denzel Romero Martinez, Luis Daniel Filorio Luna, Miguel Soria, Omar Emiliano Sanchez Villegas, Sofia Moreno Lopez. 
+## Made by 
 
-This piece of malware was created for a pseudo hackathon that aimed to teach students interested in cybersecurity how malware compromised big industry systems, especially legacy systems. 
+[Ellioth Denzel Romero Martinez](https://github.com/Denzeel)
+
+[Luis Daniel Filorio Luna](https://github.com/luisda25)
+
+[Miguel Soria](https://github.com/MESC2004)
+
+[Omar Emiliano Sanchez Villegas](https://github.com/rintintingoesbrrr)
+
+[Sofia Moreno Lopez](https://github.com/sofia-lpz)
+
+This piece of malware was created for a hackathon that aimed to teach students interested in cybersecurity how malware compromised big industry systems, especially legacy systems. 
 The challenge proposed a case study where a pharmaceutical company let 3 threat actors posed as students enter their headquarters, and through social engineering managed to enter a usb into an employees computer. They printed a pdf file that was downloaded into the computer and after they left the first computer started showing a ransom note and lost access to its files. 
 After some minutes the same started happening in other branches near the main HQ and after an hour it managed to infect their whole system.
 
